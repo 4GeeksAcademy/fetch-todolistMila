@@ -1,11 +1,56 @@
-/* 
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(241, 239, 239);
+    
+}
+.todoContainer{
+    width: 800px;
+    text-align: center;
+    font-family:"Caveat", cursive;
+    background-color: rgb(175, 94, 185);
+    box-shadow:5px 5px 5px rgba(100, 33, 112, 0.793);
+}
+h1{
+    font-size: 5rem;
+}
+input{
+    width: 90%;
+    padding: 10px;
+    font-size: 2.5rem;
+    background-color: #f6f5fad2;
+}
+.deleteBtn {
+    margin-left: 20px;
+    color: #434343d1;
+    font-size: 40px;
+    display: none;
+    cursor: pointer;
+}
+.taskItem {
+  font-size: 3rem;
+  position: relative;
+  padding: 10px;
+  background-color: rgba(181, 107, 191, 0.921);
+  margin: 8px;
+  border-radius: 6px;
+  box-shadow: 2px 2px 5px rgba(92, 30, 99, 0.74);
+  transition: background-color 0.3s;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.noTask {
+  color: rgb(7, 0, 9);
+  padding: 10px;
+  font-size: 2.5rem;
+}
 
-*/
+.footer {
+  margin-top: 15px;
+  font-size: 2rem;
+  color: #000000;
+}
+
+.taskItem:hover .deleteBtn {
+  display: inline;
+}
